@@ -1,7 +1,10 @@
+FROM alpine
 
-FROM ubuntu
+LABEL name=docker-happy-birthday \
+      version=1.0 
 
 COPY ./banner.sh /root/
+RUN chmod +x /root/banner.sh
 
-RUN echo 'source /root/banner.sh' > /root/.bashrc
+CMD /root/banner.sh 
 
