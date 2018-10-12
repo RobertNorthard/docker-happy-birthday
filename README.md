@@ -1,3 +1,3 @@
 # Happy Birthday Docker Image
 
-`docker run -ti robertnorthard/happy-birthday`
+`docker run robertnorthard/happy-birthday`
